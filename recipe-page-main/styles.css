@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: hsl(30, 54%, 90%);
+}
+figure{ 
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    color:hsl(24, 5%, 18%);
+    font-family: Young Serif;
+    font-weight: 800;
+    font-style: bold;
+}
+
+p{
+    color: hsl(30, 10%, 34%);
+    font-family: Outfit;
+    font-weight: 400;
+}
+/* Reuse Section  */
+
+.Centering {
+    display: block;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+/* Prep time section  */
+
+.Preparation-time{
+    display: block;
+    max-width: 80vw;
+    margin: 0 auto;
+    background-color: hsl(330, 100%, 98%);
+
+}
+
+.Preparation-time h2{
+    color:hsl(332, 51%, 32%);
+    
+}
+
+.Preparation-time ul{
+    line-height: 2rem;
+    color: hsl(30, 10%, 34%);
+}
+.Preparation-time ul li::marker {
+    color: hsl(332, 51%, 32%); /* Change this to any color you want */
+}
+
+
+/* Ingredients Section  */
+.Ingredients ul li::marker {
+   color:  hsl(14, 45%, 36%); 
+}
+.Ingredients h2{
+    color: hsl(14, 45%, 36%);
+}
+
+.Ingredients ul{
+    color:hsl(30, 10%, 34%);
+}
+
+.Ingredients {
+    line-height: 2rem;
+}
+
+/* Instructions Section  */
+
+.Instructions h2 {
+    color: hsl(14, 45%, 36%);
+}
+
+.Instructions ol{
+    color: hsl(30, 10%, 34%);
+    line-height: 2rem;
+}
+
+.Instructions ol li::marker {
+    color:  hsl(14, 45%, 36%); 
+    font-weight: 800;
+}
+
+/* Nutrition Section  */
+
+.Nutrition h2 {
+    font-family: Young serif;
+    color: hsl(14, 45%, 36%); 
+}
+
+.Nutrition p{
+    font-family: Outfit;
+    font-weight: 540;
+    color: hsl(30, 10%, 34%);
+}
+
+/* Nutrition Details List */
+
+.Nutrition dt {
+    display: inline-block;
+    font-family: Outfit;
+    font-weight: 500;
+    color: hsl(30, 10%, 34%);
+}
+
+
+.Nutrition dd{
+    /* display: inline-block; */
+    float: right;
+    padding-right: 3rem;
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+
+
+h2{
+    text-align: left;
+}
+
+.Card {
+    margin: 0 auto;
+    background-color: white;
+    width: 100vw;
+    min-height: 100vh;
+    display: block;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.Omelette-img {
+    width: 125%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.Spacing{ 
+    display: block;
+    max-width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+
+/* MEDIA QUERIES FOR DESKTOP  */
+@media (min-width: 1025px) {
+    /* Card size & edge spacing */
+    .Card {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 35vw;
+        padding: 40px;
+        border-radius: 3%;
+    }
+
+    /*Omelette Image */
+    .Omelette-img {
+        width: 110%;
+        height: auto;
+        border-radius: 3%;
+    }
+
+
+    .Nutrition dd{
+        padding-right: 40%;
+    }
+
+    .Nutrition p{
+        font-size:large ;
+    }
+}
+
